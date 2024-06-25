@@ -1,0 +1,67 @@
+#%RAML 1.0
+title: test
+/OrderCreation:
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              output: "Order Created"
+      400:
+        body:
+          application/json:
+            examples:
+              output: "Bad request"
+/Orderfullfilled:
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              output: "Order fulfilled"
+      400:
+        body:
+          application/json:
+            examples:
+              output: "Bad request"
+/paymentCaptured:
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              output: "Payment has been captured"
+      400:
+        body:
+          application/json:
+            examples:
+              output: "Bad request"
+/returnCreated:
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              output: "Return Created"
+      400:
+        body:
+          application/json:
+            examples:
+              output: "Bad request"
+/refundCreated:
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              output: "Refund Created"
+      400:
+        body:
+          application/json:
+            examples:
+              output: "Bad request"
